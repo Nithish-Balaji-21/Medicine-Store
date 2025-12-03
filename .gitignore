@@ -1,0 +1,37 @@
+# Compiled Java files
+*.class
+*.jar
+*.war
+*.ear
+
+# IDE
+.vscode/
+.idea/
+*.iml
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Database
+*.db
+*.sqlite
+*.log
+
+# Secrets and credentials
+*.env
+.env.local
+config.properties
+credentials.json
+
+# Build output
+bin/
+out/
+target/
+build/
+
+# Temporary files
+*.tmp
+*~
