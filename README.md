@@ -24,40 +24,12 @@ A full-stack desktop application for medical inventory management with role-base
 - MySQL Server
 - MySQL JDBC Driver (mysql-connector-java-8.0.33.jar)
 
-## Setup Instructions
-
-### 1. Clone the Repository
-```bash
-git clone https://github.com/Nithish-Balaji-21/Pharmacy_Management.git
-cd Pharmacy_Management
-```
-
-### 2. Configure Database
-
-Create a MySQL database and set environment variables:
-
-**Windows (PowerShell):**
-```powershell
-$env:DB_URL = "jdbc:mysql://localhost/medicalstore"
-$env:DB_USER = "root"
-$env:DB_PASSWORD = "your_password"
-```
-
-**Linux/Mac (Bash):**
-```bash
-export DB_URL="jdbc:mysql://localhost/medicalstore"
-export DB_USER="root"
-export DB_PASSWORD="your_password"
-```
-
-Or update `db/DBConnection.java` with your credentials.
-
-### 3. Compile the Project
+### Compile the Project
 ```bash
 javac -d . db/DBConnection.java ui/*.java
 ```
 
-### 4. Run the Application
+### Run the Application
 ```bash
 java -cp . ui.LoginForm
 ```
@@ -85,11 +57,3 @@ For testing without a database:
 ├── .gitignore
 └── README.md
 ```
-
-## License
-
-MIT License
-
-## Author
-
-Nithish Balaji
